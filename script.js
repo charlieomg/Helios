@@ -1015,12 +1015,12 @@ async function fetchExternalContent(url, content, tabIndex) {
     console.log(`Fetching content for URL: ${url}`);
 
     const proxies = [
-        `https://api.cors.lol/?url=${encodeURIComponent(url)}`,
-        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-        `https://api.codetabs.com/v1/tmp/?quest=${encodeURIComponent(url)}`,
-        `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${encodeURIComponent(url)}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${encodeURIComponent(url)}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url$={encodeURIComponent(url)}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${encodeURIComponent(url)}`
         /*,
-                `https://corsproxy.io/?url=${encodeURIComponent(url)}`*/
+                `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${encodeURIComponent(url)}`*/
     ];
 
     const timeout = 10000;
@@ -1177,10 +1177,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchExternalContent(url, content, tabIndex) {
     let proxies = [
-        `https://api.cors.lol/?url=${url}`,
-        `https://api.codetabs.com/v1/proxy?quest=${url}`,
-        `https://api.codetabs.com/v1/tmp/?quest=${url}`,
-        `https://api.allorigins.win/raw?url=${url}`
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${url}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${url}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${url}`,
+        `https://workers-playground-lively-sky-28e2.charlierules100.workers.dev/?url=${url}`
     ];
 
     // Remove cors.lol proxy for any URL containing 'google.com'
